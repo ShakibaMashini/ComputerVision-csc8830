@@ -24,10 +24,9 @@ To validate the measurement:
 
 # part 2
 # Web Application 
-* The web_app/ folder contains:
 * index.html — browser interface
 * script.js — click-based measurement logic
-*style.css — UI styling
+* style.css — UI styling
 
 How to run the web app
 * Simply open:
