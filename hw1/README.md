@@ -33,13 +33,13 @@ How to run the web app
 * web_app/index.html
 * in any browser (Chrome, Safari, Firefox, Edge).
 *  No installation is needed.
-*  
+  
 The web app:
 
 * Loads an image
 * Lets the user click two points
 * Computes the real-world distance using the same projection equations
 * Displays the output overlay on the image
-* 
+  
 This satisfies the requirement:
 “Application must run as a Web application on a browser and be OS agnostic.”
