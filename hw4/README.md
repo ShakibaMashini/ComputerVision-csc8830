@@ -31,27 +31,31 @@ The panorama is created using a classical homography-based workflow:
 
 <img width="600" height="600" alt="output_panorama" src="https://github.com/user-attachments/assets/e35cfc82-e2a8-43ba-a649-0b14714b0d1c" />
 
-
-
 The resulting panorama merges the input frames into a continuous wide-angle view.
+
 #Phone Panorama Comparison
 For reference, a panorama captured using a mobile device is shown below:
 
 ![phone_panorama](https://github.com/user-attachments/assets/816bee3f-944e-4a63-807a-5467a4d5266a)
 
 Smartphone stitching generally includes:
-exposure compensation
-seam smoothing
-more aggressive blending
+* exposure compensation
+* seam smoothing
+* more aggressive blending
 The Python version focuses on correctness and transparent feature-based alignment.
-🧪 Part 2 — SIFT From Scratch + RANSAC Alignment
+
+
+# Part 2 — SIFT From Scratch + RANSAC Alignment
 This component implements the SIFT algorithm manually and compares its performance with OpenCV’s official version.
-📥 Input Images
+
+## Input Images
 These two images were used for SIFT extraction and homography estimation:
+
 <p align="center">
-  <img src="sift_input1.jpg" width="320">
-  <img src="sift_input2.jpg" width="320">
+  <img src="https://github.com/user-attachments/assets/e444e50b-3547-4917-9aea-d8179f13cdf1" width="350">
+  <img src="https://github.com/user-attachments/assets/8bb7d3a2-6d32-4bbc-9b0e-41a2dc5b5e5a" width="350">
 </p>
+
 ⚙️ SIFT From Scratch — Full Pipeline
 The implementation is based on the original SIFT paper (Lowe, 2004).
 🧱 1. Gaussian Pyramid
