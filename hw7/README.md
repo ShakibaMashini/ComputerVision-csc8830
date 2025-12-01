@@ -1,10 +1,8 @@
-# ComputerVision-csc8830-hw7
+# Homework 7 — Calibrated Stereo Size Estimation & Real-Time Pose/Hand Tracking
 
-
-Homework 7 — Calibrated Stereo Size Estimation & Real-Time Pose/Hand Tracking
 This assignment combines two main components:
-Metric object-size estimation using a calibrated stereo camera pair, and
-Real-time human-pose and hand-landmark tracking.
+1. Metric object-size estimation using a calibrated stereo camera pair, and
+2. Real-time human-pose and hand-landmark tracking.
 Both modules are accessible from my project’s main webpage and include demo images/videos as required.
 
 
