@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Calibrated Stereo – Object Size Estimation</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+
+  <body>
+    <h2>Calibrated Stereo – Object Size Estimation</h2>
+
+    <!-- File inputs -->
+    <div class="controls">
+      <label>
+        Left image:
+        <input type="file" id="leftInput" accept="image/*">
+      </label>
+
+      <label>
+        Disparity image:
+        <input type="file" id="dispInput" accept="image/*">
+      </label>
+    </div>
+
+    <!-- Image + overlay canvas -->
+    <div id="image-container">
+      <img id="picture" alt="Left image will appear here" />
+      <canvas id="aimer" width="0" height="0"></canvas>
+    </div>
+
+    <!-- Hidden canvas that stores disparity pixels -->
+    <canvas id="dispCanvas" width="0" height="0" style="display:none;"></canvas>
+
+    <div class="controls">
+      <button id="resetBtn">Reset Points</button>
+    </div>
+
+    <p id="status">
+      1) Upload a left image and its disparity image.  
+      2) Then click two points on the object to measure their 3D distance.
+    </p>
+
+    <script src="index.js"></script>
+  </body>
+</html>

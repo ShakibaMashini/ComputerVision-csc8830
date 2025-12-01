@@ -1,0 +1,9 @@
+{
+  "fx": 800.0,
+  "fy": 800.0,
+  "cx": 480.0,
+  "cy": 640.0,
+  "baseline": 0.1,
+  "disp_min_valid": 0.5625,
+  "disp_max_valid": 63.0
+}

@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.controls {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#image-container {
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+/* Left image */
+#picture {
+  max-width: 80vw;
+  max-height: 70vh;
+  display: block;
+}
+
+/* Overlay canvas for crosshair + points + line */
+#aimer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  /* same size as picture in JS */
+}
+
+#status {
+  margin-top: 12px;
+  font-size: 18px;
+}
