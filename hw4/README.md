@@ -10,10 +10,10 @@ Input Images
 <h3 align="center">Input Images</h3>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/d8cc59e3-cbe0-444c-ba30-c9b93d39bd5d" width="260">
-  <img src="https://github.com/user-attachments/assets/d75116fe-627b-4984-a869-1865ffa363cf" width="260">
-  <img src="https://github.com/user-attachments/assets/ece3f2bb-c151-4956-8688-c1246538443f" width="260">
-  <img src="https://github.com/user-attachments/assets/011dea48-d45b-494b-98f6-93388ae1f00a" width="260">
+  <img src="https://github.com/user-attachments/assets/d8cc59e3-cbe0-444c-ba30-c9b93d39bd5d" width="200">
+  <img src="https://github.com/user-attachments/assets/d75116fe-627b-4984-a869-1865ffa363cf" width="200">
+  <img src="https://github.com/user-attachments/assets/ece3f2bb-c151-4956-8688-c1246538443f" width="200">
+  <img src="https://github.com/user-attachments/assets/011dea48-d45b-494b-98f6-93388ae1f00a" width="200">
 </p>
 The overlapping content allows the algorithm to detect correspondences and compute valid homographies.
 🧵 Part 2 — Feature-Based Image Stitching (Homography Panorama)
