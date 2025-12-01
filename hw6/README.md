@@ -1,1 +1,0 @@
-# ComputerVision-csc8830-hw6
