@@ -56,54 +56,53 @@ These two images were used for SIFT extraction and homography estimation:
   <img src="https://github.com/user-attachments/assets/8bb7d3a2-6d32-4bbc-9b0e-41a2dc5b5e5a" width="350">
 </p>
 
-⚙️ SIFT From Scratch — Full Pipeline
+# SIFT From Scratch — Full Pipeline
 The implementation is based on the original SIFT paper (Lowe, 2004).
-🧱 1. Gaussian Pyramid
-Construct multiple octaves
-Apply progressive blur using predetermined σ values
-🔍 2. DoG Pyramid
+1. Gaussian Pyramid
+* Construct multiple octaves
+* Apply progressive blur using predetermined σ values
+# 2. DoG Pyramid
 Subtract adjacent Gaussian levels
 Enhances blob-like structures
-✏️ 3. Keypoint Detection
+# 3. Keypoint Detection
 Locate extrema in a 3×3×3 neighborhood
 Apply contrast filtering
 Remove edge-like points via Hessian ratio test
-🧭 4. Orientation Assignment
+# 4. Orientation Assignment
 Compute gradient magnitudes and orientations
 Build orientation histograms
 Assign canonical orientation for invariance
-🧰 5. 128-D Descriptor Construction
+# 5. 128-D Descriptor Construction
 4×4 spatial bins
 8 orientation bins per cell
 Total: 128-dimensional descriptor
-🔗 6. Feature Matching
+# 6. Feature Matching
 Euclidean distance between descriptors
 Lowe’s ratio test for outlier rejection
-🧪 7. RANSAC Homography Estimation
+# 7. RANSAC Homography Estimation
 Robustly estimate transformation
 Remove mismatches
-🔬 Feature Matching — Results
-🟦 OpenCV SIFT (Baseline)
-<p align="center">
-  <img src="opencv_sift_matches.jpg" width="600">
-</p>
-🟥 Custom SIFT Implementation (From Scratch)
-<p align="center">
-  <img src="custom_sift_matches.jpg" width="600">
-</p>
-📊 Comparison & Observations
-OpenCV SIFT:
-Detects more interest points
-Produces denser correspondences
-Custom SIFT Implementation:
-Correctly identifies stable keypoints
-Generates fewer but consistent matches
-Performs well after RANSAC refinement
-Differences arise due to:
-simplified scale-space
-thresholding differences
-numerical precision
-gradient smoothing
+
+# Feature Matching — Results
+ * OpenCV SIFT (Baseline)
+<img width="300" height="200" alt="opencv_matches" src="https://github.com/user-attachments/assets/7be3b049-d134-48b3-80b6-af55e033642b" />
+
+* Custom SIFT Implementation (From Scratch)
+<img width="300" height="200" alt="ours_matches" src="https://github.com/user-attachments/assets/29d8a9cd-511a-4449-b44b-60df3e47517a" />
+
+Comparison & Observations
+# OpenCV SIFT:
+  * Detects more interest points
+  * Produces denser correspondences
+# Custom SIFT Implementation:
+  * Correctly identifies stable keypoints
+  * Generates fewer but consistent matches
+  * Performs well after RANSAC refinement
+# Differences arise due to:
+  * simplified scale-space
+  * thresholding differences
+  * numerical precision
+  * gradient smoothing
 Despite being implemented manually, the custom version produces meaningful matches and aligns well with the OpenCV baseline.
 
 
