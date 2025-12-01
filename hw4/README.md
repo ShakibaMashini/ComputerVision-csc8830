@@ -85,10 +85,10 @@ The implementation is based on the original SIFT paper (Lowe, 2004).
 
 # Feature Matching — Results
  * OpenCV SIFT (Baseline)
-<img width="500" height="200" alt="opencv_matches" src="https://github.com/user-attachments/assets/7be3b049-d134-48b3-80b6-af55e033642b" />
+<img width="500" height="400" alt="opencv_matches" src="https://github.com/user-attachments/assets/7be3b049-d134-48b3-80b6-af55e033642b" />
 
 * Custom SIFT Implementation (From Scratch)
-<img width="500" height="200" alt="ours_matches" src="https://github.com/user-attachments/assets/29d8a9cd-511a-4449-b44b-60df3e47517a" />
+<img width="500" height="400" alt="ours_matches" src="https://github.com/user-attachments/assets/29d8a9cd-511a-4449-b44b-60df3e47517a" />
 
 Comparison & Observations
 # OpenCV SIFT:
