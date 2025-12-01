@@ -25,7 +25,7 @@ After recovering the 3D point, the program measures real-world distances by comp
   * 3D reconstruction
   * Measured dimensions rendered directly on the image
 
-  * <img width="400" height="500" alt="Screenshot 2025-12-01 at 5 53 01 PM" src="https://github.com/user-attachments/assets/2b704d3e-0e4f-4936-927d-201bc870c825" />
+  * <img width="500" height="400" alt="Screenshot 2025-12-01 at 5 53 01 PM" src="https://github.com/user-attachments/assets/2b704d3e-0e4f-4936-927d-201bc870c825" />
 
     
 
@@ -37,13 +37,20 @@ This module performs live body-pose and hand-landmark detection using either Med
   * Visual output displayed on screen
   * Keypoint data saved frame-by-frame into a CSV file
   * No classification required — only keypoint extraction
-# CSV Output Format
-Each row corresponds to a single video frame and contains:
-  * x, y coordinates for every detected joint/landmark
-  * confidence scores
-  * library-dependent missing-point indicators (0 or -1)
-  This format allows further use in gesture analysis, biomechanics, or temporal modeling.
-# Demo (Shown on Webpage)
+# Saved Data Format (CSV)
+  * Each frame written to the CSV contains:
+  * the x/y pixel or normalized coordinates for each detected keypoint
+  * the associated confidence score
+  * missing detections encoded per-library (typically 0 or –1)
+ This format allows further use in gesture analysis, biomechanics, or temporal modeling.
+
+# Demo
+
+<img width="500" height="400" alt="Screenshot 2025-12-01 at 5 58 33 PM" src="https://github.com/user-attachments/assets/ee7f53e6-fb53-4734-8a9c-5cb11ec3b5c0" />
+
   * Full skeleton visualization
   * Hand keypoints
   * Same data exported to CSV
+<img width="500" height="400" alt="Screenshot 2025-12-01 at 5 58 59 PM" src="https://github.com/user-attachments/assets/60983e8e-fdbe-4103-806d-a396814a078c" />
+
+
