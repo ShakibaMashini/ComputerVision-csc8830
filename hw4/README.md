@@ -16,19 +16,23 @@ Input Images
   <img src="https://github.com/user-attachments/assets/011dea48-d45b-494b-98f6-93388ae1f00a" width="200">
 </p>
 The overlapping content allows the algorithm to detect correspondences and compute valid homographies.
-🧵 Part 2 — Feature-Based Image Stitching (Homography Panorama)
+
+ 
+# Part 2 — Feature-Based Image Stitching (Homography Panorama)
 The panorama is created using a classical homography-based workflow:
-🔧 Pipeline Steps
-SIFT Feature Detection
-Descriptor Extraction
-Feature Matching
-RANSAC Homography Estimation
-Image Warping
-Final Blending
-🖼️ Stitched Panorama (Python Implementation)
-<p align="center">
-  <img src="stitched_panorama.png" width="650">
-</p>
+# Pipeline Steps
+1. SIFT Feature Detection
+2. Descriptor Extraction
+3. Feature Matching
+4. RANSAC Homography Estimation
+5. Image Warping
+6. Final Blending
+# Stitched Panorama (Python Implementation
+
+<img width="600" height="200" alt="output_panorama" src="https://github.com/user-attachments/assets/e35cfc82-e2a8-43ba-a649-0b14714b0d1c" />
+
+
+
 The resulting panorama merges the input frames into a continuous wide-angle view.
 📱 Phone Panorama Comparison
 For reference, a panorama captured using a mobile device is shown below:
