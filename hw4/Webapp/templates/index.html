@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Computer Vision Web App | Part1 + Part2</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="column">
+        <h2>Part 1 — Panorama Stitching</h2>
+        <p>Upload 4 or more images:</p>
+
+        <form id="form_part1" enctype="multipart/form-data">
+            <input type="file" name="pano_images" multiple required>
+            <button type="submit">Run Stitching</button>
+        </form>
+
+        <div id="part1_result"></div>
+    </div>
+
+
+    <div class="column">
+        <h2>Part 2 — SIFT From Scratch</h2>
+        <p>Upload two images:</p>
+
+        <form id="form_part2" enctype="multipart/form-data">
+            <input type="file" name="sift_img1" required><br><br>
+            <input type="file" name="sift_img2" required><br><br>
+            <button type="submit">Run SIFT</button>
+        </form>
+
+        <div id="part2_result"></div>
+    </div>
+
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
