@@ -61,27 +61,27 @@ The implementation is based on the original SIFT paper (Lowe, 2004).
 1. Gaussian Pyramid
 * Construct multiple octaves
 * Apply progressive blur using predetermined σ values
-# 2. DoG Pyramid
-Subtract adjacent Gaussian levels
-Enhances blob-like structures
-# 3. Keypoint Detection
-Locate extrema in a 3×3×3 neighborhood
-Apply contrast filtering
-Remove edge-like points via Hessian ratio test
-# 4. Orientation Assignment
-Compute gradient magnitudes and orientations
-Build orientation histograms
-Assign canonical orientation for invariance
-# 5. 128-D Descriptor Construction
-4×4 spatial bins
-8 orientation bins per cell
-Total: 128-dimensional descriptor
-# 6. Feature Matching
-Euclidean distance between descriptors
-Lowe’s ratio test for outlier rejection
-# 7. RANSAC Homography Estimation
-Robustly estimate transformation
-Remove mismatches
+2. DoG Pyramid
+* Subtract adjacent Gaussian levels
+* Enhances blob-like structures
+3. Keypoint Detection
+* Locate extrema in a 3×3×3 neighborhood
+* Apply contrast filtering
+* Remove edge-like points via Hessian ratio test
+4. Orientation Assignment
+* Compute gradient magnitudes and orientations
+* Build orientation histograms
+* Assign canonical orientation for invariance
+5. 128-D Descriptor Construction
+* 4×4 spatial bins
+* 8 orientation bins per cell
+* Total: 128-dimensional descriptor
+6. Feature Matching
+* Euclidean distance between descriptors
+* Lowe’s ratio test for outlier rejection
+7. RANSAC Homography Estimation
+* Robustly estimate transformation
+* Remove mismatches
 
 # Feature Matching — Results
  * OpenCV SIFT (Baseline)
