@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Real-time Pose and Hand Tracking</title>
+    <!-- You can reuse your existing CSS -->
+    <link rel="stylesheet" href="index.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+      #video-container {
+        position: relative;
+        display: inline-block;
+        margin-top: 20px;
+      }
+      #inputVideo {
+        display: none; /* we draw on canvas instead */
+      }
+      #outputCanvas {
+        border: 1px solid #ccc;
+        max-width: 80vw;
+        max-height: 70vh;
+      }
+      #controls {
+        margin-top: 15px;
+      }
+      #status {
+        margin-top: 10px;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Real-time Pose Estimation and Hand Tracking (MediaPipe)</h2>
+
+    <div id="video-container">
+      <!-- Raw webcam video (hidden, used as input to MediaPipe) -->
+      <video id="inputVideo" playsinline></video>
+
+      <!-- Canvas where we draw pose + hands -->
+      <canvas id="outputCanvas"></canvas>
+    </div>
+
+    <div id="controls">
+      <button id="startBtn">Start Webcam</button>
+      <button id="stopBtn">Stop Webcam</button>
+      <button id="downloadCsvBtn">Download CSV</button>
+      <button id="clearCsvBtn">Clear CSV</button>
+    </div>
+
+    <p id="status">
+      Click "Start Webcam" to begin pose and hand tracking.
+    </p>
+
+    <!-- MediaPipe libraries (CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/holistic/holistic.js"></script>
+
+    <!-- Your JS for Part 3 -->
+    <script src="pose.js"></script>
+  </body>
+</html>
