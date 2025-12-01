@@ -29,16 +29,16 @@ The panorama is created using a classical homography-based workflow:
 6. Final Blending
 # Stitched Panorama (Python Implementation
 
-<img width="600" height="200" alt="output_panorama" src="https://github.com/user-attachments/assets/e35cfc82-e2a8-43ba-a649-0b14714b0d1c" />
+<img width="600" height="600" alt="output_panorama" src="https://github.com/user-attachments/assets/e35cfc82-e2a8-43ba-a649-0b14714b0d1c" />
 
 
 
 The resulting panorama merges the input frames into a continuous wide-angle view.
-📱 Phone Panorama Comparison
+#Phone Panorama Comparison
 For reference, a panorama captured using a mobile device is shown below:
-<p align="center">
-  <img src="phone_panorama.jpg" width="650">
-</p>
+
+![phone_panorama](https://github.com/user-attachments/assets/816bee3f-944e-4a63-807a-5467a4d5266a)
+
 Smartphone stitching generally includes:
 exposure compensation
 seam smoothing
