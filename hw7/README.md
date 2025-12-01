@@ -20,10 +20,14 @@ After recovering the 3D point, the program measures real-world distances by comp
   * Rectangular objects → width × height
   * Circular objects → diameter
   * General polygons → lengths of all visible edges
-# Demo (Shown on Webpage)
+# Demo 
   * Stereo feature matches
   * 3D reconstruction
   * Measured dimensions rendered directly on the image
+
+  * <img width="905" height="882" alt="Screenshot 2025-12-01 at 5 53 01 PM" src="https://github.com/user-attachments/assets/2b704d3e-0e4f-4936-927d-201bc870c825" />
+
+    
 
 # 2. Real-Time Pose Estimation & Hand Tracking
 This module performs live body-pose and hand-landmark detection using either MediaPipe or OpenPose.
