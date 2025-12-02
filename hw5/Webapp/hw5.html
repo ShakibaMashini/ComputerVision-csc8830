@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>HW5 – Object Tracking Demos</h2>
+<p>This page launches local OpenCV windows on your machine. Use the buttons below. Press ESC in the window to stop.</p>
+
+<div class="hw5-grid">
+  <section class="card">
+    <h3>ArUco Marker Tracker</h3>
+    <p>Tracks an ArUco marker using your webcam.</p>
+    <button id="btn-aruco">Start ArUco Tracker</button>
+  </section>
+
+  <section class="card">
+    <h3>Markerless Tracker (CSRT)</h3>
+    <p>Starts webcam; press “s” in the window to select ROI to track.</p>
+    <button id="btn-markerless">Start Markerless Tracker</button>
+  </section>
+
+  <section class="card">
+    <h3>SAM2 NPZ-based Tracker</h3>
+    <p>Step 1: Upload an image and draw a rectangle around the object to create NPZ.</p>
+    <div class="npz-maker">
+      <input type="file" id="sam-image" accept="image/*">
+      <div class="canvas-wrap">
+        <img id="sam-img" style="display:none;">
+        <canvas id="sam-canvas" width="0" height="0"></canvas>
+      </div>
+      <div class="row">
+        <button id="btn-make-npz" disabled>Create NPZ from Rectangle</button>
+        <span id="npz-status"></span>
+      </div>
+    </div>
+    <p>Step 2: Start tracking with the created NPZ.</p>
+    <div class="row">
+      <button id="btn-sam2" disabled>Start SAM2 Tracker</button>
+    </div>
+  </section>
+</div>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='hw5/style.css') }}">
+<script src="{{ url_for('static', filename='hw5/script.js') }}"></script>
+{% endblock %}
+
+
