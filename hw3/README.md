@@ -180,21 +180,21 @@ The purpose of this comparison is to evaluate:
 
 # Detected ArUco Markers
 
-<img width="715" height="624" alt="4965713215249648543_markers" src="https://github.com/user-attachments/assets/bdf6d67f-612d-4816-a743-3cd7d27ce2e5" />
+<img width="400" height="400" alt="4965713215249648543_markers" src="https://github.com/user-attachments/assets/bdf6d67f-612d-4816-a743-3cd7d27ce2e5" />
 
 # ArUco Binary Mask
 
-<img width="715" height="624" alt="4965713215249648543_mask_aruco" src="https://github.com/user-attachments/assets/b5c1c8ae-23e3-46e4-8d72-219296b6849e" />
+<img width="400" height="400" alt="4965713215249648543_mask_aruco" src="https://github.com/user-attachments/assets/b5c1c8ae-23e3-46e4-8d72-219296b6849e" />
 
 # SAM2 Segmentation Mask
-<img width="715" height="624" alt="4965713215249648543_mask_sam2" src="https://github.com/user-attachments/assets/7d16d079-471e-498b-bdc3-f9a93332d796" />
+<img width="400" height="400" alt="4965713215249648543_mask_sam2" src="https://github.com/user-attachments/assets/7d16d079-471e-498b-bdc3-f9a93332d796" />
 
 # ArUco Boundary Overlay (Red Hull)
-<img width="715" height="624" alt="4965713215249648543_boundary_aruco" src="https://github.com/user-attachments/assets/1940228f-e723-45e0-8a42-51e65528f77f" />
+<img width="400" height="400"alt="4965713215249648543_boundary_aruco" src="https://github.com/user-attachments/assets/1940228f-e723-45e0-8a42-51e65528f77f" />
 
 # ArUco Boundary + Marker Size Visualization
-<img width="715" height="624" alt="4965713215249648543_size_aruco" src="https://github.com/user-attachments/assets/7db41bfc-2c38-4b34-bf39-e65482e36b1f" />
+<img width="400" height="400" alt="4965713215249648543_size_aruco" src="https://github.com/user-attachments/assets/7db41bfc-2c38-4b34-bf39-e65482e36b1f" />
 
 # ArUco vs SAM2 Comparison Overlay
-<img width="715" height="624" alt="4965713215249648543_compare_overlay" src="https://github.com/user-attachments/assets/dffebb01-46fa-4f00-8142-78acd8a13e88" />
+<img width="400" height="400" alt="4965713215249648543_compare_overlay" src="https://github.com/user-attachments/assets/dffebb01-46fa-4f00-8142-78acd8a13e88" />
 
