@@ -25,7 +25,7 @@ To validate the measurement:
 ![book](https://github.com/user-attachments/assets/c27ed9d8-b565-46a0-9d81-ad06c54710d5)
 
 # Result Demo 
-<img width="200" height="300" alt="measure_depth_result" src="https://github.com/user-attachments/assets/b4f4dba3-94e6-4cb3-b68b-418cdd6c9e8f" />
+<img width="400" height="500" alt="measure_depth_result" src="https://github.com/user-attachments/assets/b4f4dba3-94e6-4cb3-b68b-418cdd6c9e8f" />
 
 # part 2
 # Web Application 
