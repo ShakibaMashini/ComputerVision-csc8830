@@ -138,13 +138,13 @@ Method Overview
 ## Output Demo
 
 # Detected ArUco Markers
-<img width="400" height="300" alt="4965713215249648542_markers" src="https://github.com/user-attachments/assets/4b6fa200-aac0-4e13-ae3a-fdb1b4309081" />
+<img width="400" height="400" alt="4965713215249648542_markers" src="https://github.com/user-attachments/assets/4b6fa200-aac0-4e13-ae3a-fdb1b4309081" />
 
 # Binary Mask of Segmented Object
-<img width="400" height="300"alt="4965713215249648542_mask" src="https://github.com/user-attachments/assets/28373fc9-5be5-4368-91f4-ca0d169e0495" />
+<img width="400" height="400" alt="4965713215249648542_mask" src="https://github.com/user-attachments/assets/28373fc9-5be5-4368-91f4-ca0d169e0495" />
 
 # Object Boundary Overlay (Red Hull)
-<img width="400" height="300" alt="4965713215249648542_boundary" src="https://github.com/user-attachments/assets/467eba4f-7892-4103-b913-72af2e8f3930" />
+<img width="400" height="400" alt="4965713215249648542_boundary" src="https://github.com/user-attachments/assets/467eba4f-7892-4103-b913-72af2e8f3930" />
 
 
 ## Part 5 – Comparison of ArUco-Based Segmentation vs. SAM2 Segmentation
