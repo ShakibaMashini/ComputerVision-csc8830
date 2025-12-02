@@ -41,3 +41,32 @@ Unlike crop-from-same-scene methods, each template is taken from a completely di
   <img src="https://github.com/user-attachments/assets/b0c15882-cbd0-48cd-8e47-d527b01012e7" width="280">
   <img src="https://github.com/user-attachments/assets/1ee85409-b94c-4226-bb2a-95990cb9d541" width="280">
 </p>
+
+## Part 2 — Convolution & Fourier Transform (Blurring + Restoration)
+In this part of the assignment, we explore Gaussian blurring and image restoration using the Fourier transform.
+
+Steps required:
+
+1. Capture an image ( L ) using any camera of choice.
+2. Apply a Gaussian Blur to obtain the blurred image ( L_b ).
+3. Attempt to recover the original image from ( L_b ) using frequency-domain filtering (Fourier Transform).
+4. Demonstrate each step with visual results.
+
+# Input Image (Original)
+<img width="400" height="300" alt="Screenshot 2025-12-02 at 9 46 17 AM" src="https://github.com/user-attachments/assets/5ada61ca-8f3c-48e9-91d0-45cd98c19aa9" />
+
+
+# Gaussian Blurred Image
+
+<img width="400" height="300" alt="Nailpolish_blurred" src="https://github.com/user-attachments/assets/c900aa41-01e9-43ac-a33c-580feca49991" />
+
+# Restored Image Using Fourier Transform
+<img width="400" height="300" alt="Nailpolish_restored" src="https://github.com/user-attachments/assets/a1662cd0-ed28-4ff9-bbcc-8767bddbc793" />
+
+## Summary
+
+This section demonstrates:
+  * Spatial-domain convolution (Gaussian blur)
+  * Frequency-domain deconvolution (Fourier-based restoration)
+  * Practical limitations of inverse filtering (noise amplification, imperfect recovery)
+Together, these results illustrate how convolution in the spatial domain corresponds to multiplication in the frequency domain, and how Fourier methods can be used to approximate the inverse of a blur operation.
