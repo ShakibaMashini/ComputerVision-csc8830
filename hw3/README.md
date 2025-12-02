@@ -88,4 +88,61 @@ Both results are overlaid on the original image for visualization.
 * part1/output_task1/
 * part2/output_part2/
 * Visualize using cv2.drawKeypoints()
+## Part 3 – Object Boundary Extraction (No ML / DL Allowed)
+A classical image-processing pipeline is used to extract the object boundary:
+
+1. Convert to grayscale and blur (noise reduction)
+2. Apply Otsu threshold to separate foreground/background
+3. Perform morphological closing + opening to clean and smooth the mask
+4. Find contours and choose the largest contour as the object
+5. Create:
+* A binary mask of the object
+* An overlay image with the boundary drawn in red
+
+
+#Input Example
+![4965713215249648563](https://github.com/user-attachments/assets/531e3005-4519-44a9-ae48-72a559ea16ac)
+
+## Output Demo
+
+# Object Boundary Overlay 
+
+<img width="200" height="600" alt="4965713215249648563_boundary" src="https://github.com/user-attachments/assets/f994fbcd-54da-493c-86e3-603b92ad6795" />
+
+# Binary Mask
+<img width="200" height="600" alt="4965713215249648563_mask" src="https://github.com/user-attachments/assets/b3cfca51-3454-44f6-9b0b-e32077d0e039" />
+
+# Part 4 – Object Segmentation of a Non-Rectangular Object Using ArUco Markers
+
+In this final part, we segment a non-rectangular object by placing ArUco markers along its physical boundary and capturing multiple images from various angles and distances.
+The segmentation uses only classical computer vision (OpenCV), no machine learning or deep learning.
+
+Method Overview
+
+1. Convert image to grayscale and apply light smoothing
+2. Detect ArUco markers using OpenCV (trying multiple dictionaries automatically)
+3. Gather all detected marker corner points
+4. Compute a convex hull over all marker points → this forms the object boundary
+5. Generate:
+  * An image with detected markers drawn
+  * A binary object mask
+  * An overlay showing the red boundary
+  * A visualization of marker sizes (px), estimated from their corner geometry
+
+
+
+## Input Example
+![4965713215249648542](https://github.com/user-attachments/assets/60426c69-9d62-4b53-b3d4-e2b4de3e9e78)
+
+
+## Output Demo
+
+# Detected ArUco Markers
+<img width="960" height="1280" alt="4965713215249648542_markers" src="https://github.com/user-attachments/assets/4b6fa200-aac0-4e13-ae3a-fdb1b4309081" />
+
+# Binary Mask of Segmented Object
+<img width="960" height="1280" alt="4965713215249648542_mask" src="https://github.com/user-attachments/assets/28373fc9-5be5-4368-91f4-ca0d169e0495" />
+
+# Object Boundary Overlay (Red Hull)
+<img width="960" height="1280" alt="4965713215249648542_boundary" src="https://github.com/user-attachments/assets/467eba4f-7892-4103-b913-72af2e8f3930" />
 
