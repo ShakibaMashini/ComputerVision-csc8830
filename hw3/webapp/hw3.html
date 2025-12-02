@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>HW3 – Computer Vision Pipeline Dashboard</h2>
+<link rel="stylesheet" href="{{ url_for('static', filename='hw3/style.css') }}">
+
+<section class="part-card" id="part1">
+  <h3>Part 1 – Gradients and Laplacian of Gaussian</h3>
+  <p>Upload a folder of images. The app will compute gradient magnitude, gradient angle, and LoG images.</p>
+  <form id="form-part1">
+    <input type="file" name="images" webkitdirectory directory multiple required>
+    <button type="submit">Run Part 1</button>
+  </form>
+  <div class="status" id="status-part1"></div>
+  </section>
+
+<section class="part-card" id="part2">
+  <h3>Part 2 – Edge and Corner Keypoints</h3>
+  <p>Upload a folder of images. The app will detect edge-based and Harris corner keypoints.</p>
+  <form id="form-part2">
+    <input type="file" name="images" webkitdirectory directory multiple required>
+    <button type="submit">Run Part 2</button>
+  </form>
+  <div class="status" id="status-part2"></div>
+  </section>
+
+<section class="part-card" id="part3">
+  <h3>Part 3 – Object Boundary (Brain)</h3>
+  <p>Upload the MRI / brain images. The app will segment the main object and draw the boundary.</p>
+  <form id="form-part3">
+    <input type="file" name="images" webkitdirectory directory multiple required>
+    <button type="submit">Run Part 3</button>
+  </form>
+  <div class="status" id="status-part3"></div>
+  </section>
+
+<section class="part-card" id="part4">
+  <h3>Part 4 – ArUco-Based Object Segmentation</h3>
+  <p>Upload images of a non-rectangular object with ArUco markers on its boundary.</p>
+  <form id="form-part4">
+    <input type="file" name="images" webkitdirectory directory multiple required>
+    <button type="submit">Run Part 4</button>
+  </form>
+  <div class="status" id="status-part4"></div>
+  </section>
+
+<section class="part-card" id="part5">
+  <h3>Part 5 – ArUco vs SAM2 Segmentation Comparison</h3>
+  <p>Upload the same object images as input. Optionally, upload SAM2 masks (skip if SAM2 installed).</p>
+  <form id="form-part5">
+    <label class="field-label">Dataset images:</label>
+    <input type="file" name="images" webkitdirectory directory multiple required>
+    <label class="field-label">SAM2 mask images (optional):</label>
+    <input type="file" name="masks" webkitdirectory directory multiple>
+    <button type="submit">Run Part 5</button>
+  </form>
+  <div class="status" id="status-part5"></div>
+  </section>
+
+<script src="{{ url_for('static', filename='hw3/main.js') }}"></script>
+{% endblock %}
+
+
