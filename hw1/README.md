@@ -22,7 +22,7 @@ To validate the measurement:
 * Run the script and click two physical points on the object.
 * Compare the estimated vs. true distance.
 # input Photo
-![book](https://github.com/user-attachments/assets/c27ed9d8-b565-46a0-9d81-ad06c54710d5)
+<img src="https://github.com/user-attachments/assets/c27ed9d8-b565-46a0-9d81-ad06c54710d5" width="400" height="500">
 
 # Result Demo 
 <img width="400" height="500" alt="measure_depth_result" src="https://github.com/user-attachments/assets/b4f4dba3-94e6-4cb3-b68b-418cdd6c9e8f" />
