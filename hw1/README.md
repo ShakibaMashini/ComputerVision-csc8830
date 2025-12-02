@@ -21,6 +21,11 @@ To validate the measurement:
 * Photograph the object.
 * Run the script and click two physical points on the object.
 * Compare the estimated vs. true distance.
+# input Photo
+![book](https://github.com/user-attachments/assets/c27ed9d8-b565-46a0-9d81-ad06c54710d5)
+
+# Result Demo 
+<img width="622" height="615" alt="measure_depth_result" src="https://github.com/user-attachments/assets/b4f4dba3-94e6-4cb3-b68b-418cdd6c9e8f" />
 
 # part 2
 # Web Application 
@@ -40,6 +45,8 @@ The web app:
 * Lets the user click two points
 * Computes the real-world distance using the same projection equations
 * Displays the output overlay on the image
-  
+
+<img width="1493" height="906" alt="Screenshot 2025-12-02 at 9 52 13 AM" src="https://github.com/user-attachments/assets/44b49c9d-5acb-408f-a6a8-e41822b0d5ca" />
+
 This satisfies the requirement:
 “Application must run as a Web application on a browser and be OS agnostic.”
