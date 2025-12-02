@@ -190,7 +190,8 @@ The purpose of this comparison is to evaluate:
 <img width="400" height="400" alt="4965713215249648543_mask_sam2" src="https://github.com/user-attachments/assets/7d16d079-471e-498b-bdc3-f9a93332d796" />
 
 # ArUco Boundary Overlay (Red Hull)
-<img width="400" height="400"alt="4965713215249648543_boundary_aruco" src="https://github.com/user-attachments/assets/1940228f-e723-45e0-8a42-51e65528f77f" />
+
+<img width="400" height="400" alt="4965713215249648543_boundary_aruco" src="https://github.com/user-attachments/assets/1940228f-e723-45e0-8a42-51e65528f77f" />
 
 # ArUco Boundary + Marker Size Visualization
 <img width="400" height="400" alt="4965713215249648543_size_aruco" src="https://github.com/user-attachments/assets/7db41bfc-2c38-4b34-bf39-e65482e36b1f" />
