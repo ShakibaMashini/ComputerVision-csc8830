@@ -1,31 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Template Matching Web App</title>
-    <link rel="stylesheet" href="/static/style.css">
+  <meta charset="UTF-8" />
+  <title>Module 2 – Template Matching (HW2)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    .desc {
+      background: #ffffff;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+    .images {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+    figure {
+      background: #ffffff;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 0 4px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    figure img {
+      max-width: 380px;
+      height: auto;
+      display: block;
+      margin: 0 auto 8px;
+    }
+    figcaption {
+      font-size: 0.9rem;
+    }
+    .back-link {
+      text-align: center;
+      margin-top: 20px;
+    }
+    a.button {
+      display: inline-block;
+      padding: 8px 16px;
+      border-radius: 6px;
+      border: 1px solid #333;
+      text-decoration: none;
+      color: #333;
+      background: #fff;
+    }
+    a.button:hover {
+      background: #e0e0e0;
+    }
+    code {
+      background: #eee;
+      padding: 2px 4px;
+      border-radius: 4px;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
-
 <body>
+  <h1>CSC 8830 – Computer Vision</h1>
+  <h2>Module 2 – Template Matching (Homework 2)</h2>
 
-<h1>Template Matching Web App</h1>
+  <div class="desc">
+    <p>
+      This module demonstrates <strong>template matching</strong> from Homework 2.
+      The goal is to locate a smaller template image inside a larger scene image.
+    </p>
+    <p>My implementation does the following:</p>
+    <ul>
+      <li>Converts the scene and template images to grayscale.</li>
+      <li>Slides the template over the scene and computes a similarity score at each location using normalized cross-correlation.</li>
+      <li>Finds the best match location and draws a bounding box around the detected template.</li>
+    </ul>
+    <p>
+      Below is an example scene, the template patch, and the final detection result.
+      The full Python implementation is in the repository under
+      <code>hw2/Part3</code>, and a short demo video is included in the
+      module videos ZIP submitted in iCollege.
+    </p>
+  </div>
 
-<div class="upload-section">
-    <input type="file" id="imageInput" accept="image/*">
-    <button onclick="uploadImage()">Run Template Matching</button>
-</div>
+  <div class="images">
+    <figure>
+      <!-- Replace the src path with your actual scene image path if different -->
+      <img src="../../images/hw2_scene.jpg" alt="Original scene used for template matching">
+      <figcaption><strong>Original Scene</strong> – input image.</figcaption>
+    </figure>
 
-<div class="images">
-    <div>
-        <h3>Original</h3>
-        <img id="originalImage" class="img-box">
-    </div>
+    <figure>
+      <!-- Replace the src path with your actual template image path if different -->
+      <img src="../../images/hw2_template.jpg" alt="Template patch used for matching">
+      <figcaption><strong>Template Image</strong> – patch to be located in the scene.</figcaption>
+    </figure>
+  </div>
 
-    <div>
-        <h3>Blurred Output</h3>
-        <img id="outputImage" class="img-box">
-    </div>
-</div>
+  <div class="images">
+    <figure>
+      <!-- Replace the src path with your actual result image path if different -->
+      <img src="../../images/hw2_match_result.jpg" alt="Scene with detected template bounding box">
+      <figcaption><strong>Detection Result</strong> – best match highlighted with a bounding box.</figcaption>
+    </figure>
+  </div>
 
-<script src="/static/script.js"></script>
+  <div class="back-link">
+    <a class="button" href="https://shakibamashini.github.io/ComputerVision-csc8830/">
+      ← Back to Portfolio Landing Page
+    </a>
+  </div>
 </body>
 </html>
