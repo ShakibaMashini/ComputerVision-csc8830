@@ -60,11 +60,13 @@ Both results are overlaid on the original image for visualization.
 
 # EDGE Keypoints
 
-<img width="400" height="300" alt="4965713215249648563_edge_kp" src="https://github.com/user-attachments/assets/6590d0b8-3607-4b0e-bfec-3a889d8ae650" />
+
+<img width="960" height="1280" alt="4965713215249648563_edge_kp" src="https://github.com/user-attachments/assets/4b2b7158-d3b6-48e6-9f77-add39d5799b6" />
 
 # CORNER Keypoints
 
-<img width="400" height="300" alt="4965713215249648563_corner_kp" src="https://github.com/user-attachments/assets/9db658c6-9d65-4a11-93b7-3721222f370c" />
+<img width="960" height="1280" alt="4965713215249648563_corner_kp" src="https://github.com/user-attachments/assets/7fd718f1-c684-4466-8223-0b1b08ec39c1" />
+
 
 ##  Method Summary (Part 2)
 # EDGE Keypoint Detector
