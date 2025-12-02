@@ -4,6 +4,7 @@ This assignment consists of two main components:
   1. Object Detection using Template Matching (Correlation Method)
   2. Gaussian Blurring + Image Restoration using the Fourier Transform
 All visual examples below are produced by the implemented Python pipeline.
+
 # Part 1 — Object Detection Using Template Matching (Correlation)
 This section implements object detection using correlation-based template matching.
 Unlike crop-from-same-scene methods, each template is taken from a completely different image, which makes the task significantly more challenging.
@@ -23,9 +24,10 @@ Unlike crop-from-same-scene methods, each template is taken from a completely di
 </p>
 
 # Scene Images (Examples)
-
-
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/a20bc036-3e7f-4e26-a084-ece11680f7bb" width="320">
+  <img src="https://github.com/user-attachments/assets/09a9ebcc-6e46-4a3f-939f-f6f7d60dc8f0" width="320">
+</p>
 
 # Detection Results(Examples)
 
