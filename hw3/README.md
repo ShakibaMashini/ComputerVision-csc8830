@@ -85,7 +85,7 @@ Both results are overlaid on the original image for visualization.
 
 
 # Output Directories
-part1/output_task1/
-part2/output_part2/
-Visualize using cv2.drawKeypoints()
+* part1/output_task1/
+* part2/output_part2/
+* Visualize using cv2.drawKeypoints()
 
