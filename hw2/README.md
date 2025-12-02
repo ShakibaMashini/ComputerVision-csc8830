@@ -26,8 +26,9 @@ Unlike crop-from-same-scene methods, each template is taken from a completely di
 # Scene Images (Examples)
 <p align="center">
   <img src="https://github.com/user-attachments/assets/a20bc036-3e7f-4e26-a084-ece11680f7bb" width="320">
-  <img src="https://github.com/user-attachments/assets/09a9ebcc-6e46-4a3f-939f-f6f7d60dc8f0" width="320">
+  <img src="https://github.com/user-attachments/assets/b28dce40-e45f-4afa-8780-61ae8f10bd23" width="320">
 </p>
+
 
 # Detection Results(Examples)
 
