@@ -53,15 +53,15 @@ Steps required:
 4. Demonstrate each step with visual results.
 
 # Input Image (Original)
-<img width="400" height="300" alt="Screenshot 2025-12-02 at 9 46 17 AM" src="https://github.com/user-attachments/assets/5ada61ca-8f3c-48e9-91d0-45cd98c19aa9" />
+<img width="400" height="400" alt="Screenshot 2025-12-02 at 9 46 17 AM" src="https://github.com/user-attachments/assets/5ada61ca-8f3c-48e9-91d0-45cd98c19aa9" />
 
 
 # Gaussian Blurred Image
 
-<img width="400" height="300" alt="Nailpolish_blurred" src="https://github.com/user-attachments/assets/c900aa41-01e9-43ac-a33c-580feca49991" />
+<img width="400" height="400" alt="Nailpolish_blurred" src="https://github.com/user-attachments/assets/c900aa41-01e9-43ac-a33c-580feca49991" />
 
 # Restored Image Using Fourier Transform
-<img width="400" height="300" alt="Nailpolish_restored" src="https://github.com/user-attachments/assets/a1662cd0-ed28-4ff9-bbcc-8767bddbc793" />
+<img width="400" height="400" alt="Nailpolish_restored" src="https://github.com/user-attachments/assets/a1662cd0-ed28-4ff9-bbcc-8767bddbc793" />
 
 ## Summary
 
