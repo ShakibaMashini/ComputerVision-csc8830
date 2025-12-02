@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.upload-section {
+    margin-bottom: 20px;
+}
+
+.images {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.img-box {
+    width: 420px;
+    border: 1px solid #aaa;
+}
