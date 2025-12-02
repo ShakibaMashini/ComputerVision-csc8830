@@ -1,0 +1,236 @@
+---
+title: "HW 5 & 6 – Motion Tracking and Lucas–Kanade with Affine Motion"
+author: "Shakiba Mashini"
+date: "Fall 2025"
+output: pdf_document
+---
+
+# (a) Derivation of the Motion Tracking Equation (Optical Flow Constraint)
+
+## Image formation and motion
+
+A grayscale video is represented by an intensity function:
+
+$$I(x, y, t)$$
+
+A point in the scene appears at pixel coordinates $(x(t), y(t))$.  
+After a small time interval $\Delta t$, it moves to:
+
+$$
+(x(t+\Delta t), y(t+\Delta t)) =
+(x + u\Delta t,\; y + v\Delta t)
+$$
+
+where:
+
+$$
+u = \frac{dx}{dt}, \qquad v = \frac{dy}{dt}
+$$
+
+are the optical flow components.
+
+## Brightness Constancy
+
+Brightness constancy states:
+
+$$
+I(x, y, t) = I(x + u\Delta t,\; y + v\Delta t,\; t + \Delta t)
+$$
+
+## Taylor Expansion
+
+Applying a first-order Taylor expansion:
+
+$$
+I(x + u\Delta t, y + v\Delta t, t + \Delta t)
+\approx
+I + I_x(u\Delta t) + I_y(v\Delta t) + I_t\Delta t
+$$
+
+Substitute into the brightness constancy equation and simplify:
+
+$$
+0 \approx I_x u + I_y v + I_t
+$$
+
+## Optical Flow Constraint Equation
+
+Thus:
+
+$$
+I_x u + I_y v + I_t = 0
+$$
+
+Vector form:
+
+$$
+\nabla I^\top
+\begin{bmatrix}
+u \\ v
+\end{bmatrix}
++ I_t = 0
+$$
+
+Because this is a single equation with two unknowns, additional assumptions are needed to estimate flow.
+
+---
+
+# (b) Lucas–Kanade for Affine Motion
+
+## Affine Motion Model
+
+Motion in a small window is modeled as affine:
+
+$$
+u(x,y) = a_1 x + b_1 y + c_1,
+\qquad
+v(x,y) = a_2 x + b_2 y + c_2
+$$
+
+Parameter vector:
+
+$$
+p =
+[a_1,\; b_1,\; c_1,\; a_2,\; b_2,\; c_2]^\top
+$$
+
+## Optical Flow Constraint with Affine Motion
+
+Substituting the affine model into the optical flow equation:
+
+$$
+I_x(a_1 x + b_1 y + c_1)
++
+I_y(a_2 x + b_2 y + c_2)
++
+I_t = 0
+$$
+
+This can be written as:
+
+$$
+A(x,y) p + I_t = 0
+$$
+
+where:
+
+$$
+A(x,y) =
+[I_x x,\; I_x y,\; I_x,\; I_y x,\; I_y y,\; I_y]
+$$
+
+---
+
+# Lucas–Kanade Least Squares Formulation
+
+Over all pixels $(x,y)$ in a window $W$, minimize:
+
+$$
+E(p) =
+\sum_{(x,y)\in W}
+(A(x,y)p + I_t)^2
+$$
+
+Normal equations:
+
+$$
+H p = b
+$$
+
+where:
+
+$$
+H = \sum A^\top A,
+\qquad
+b = -\sum A^\top I_t
+$$
+
+Solution:
+
+$$
+p = H^{-1} b
+$$
+
+---
+
+# Iterative Lucas–Kanade with Affine Warp
+
+## Warp Function
+
+Coordinates are warped using:
+
+$$
+\begin{bmatrix}
+x' \\ y'
+\end{bmatrix}
+=
+\begin{bmatrix}
+x + u(x,y) \\
+y + v(x,y)
+\end{bmatrix}
+$$
+
+Affine matrix form:
+
+$$
+\begin{bmatrix}
+x' \\ y' \\ 1
+\end{bmatrix}
+=
+\begin{bmatrix}
+1 + a_1 & b_1 & c_1 \\
+a_2     & 1 + b_2 & c_2 \\
+0 & 0 & 1
+\end{bmatrix}
+\begin{bmatrix}
+x \\ y \\ 1
+\end{bmatrix}
+$$
+
+## Error Function
+
+Lucas–Kanade minimizes:
+
+$$
+E(p)
+=
+\sum_{(x,y)\in W}
+\left( I_2(W(x,y;p)) - I_1(x,y) \right)^2
+$$
+
+## Linearization
+
+Define residual:
+
+$$
+e(x,y) = I_2(W(x,y;p)) - I_1(x,y)
+$$
+
+Steepest-descent row:
+
+$$
+J = \nabla I_2 \cdot \frac{\partial W}{\partial p}
+$$
+
+Solve for parameter increment:
+
+$$
+H \Delta p = -g
+$$
+
+Update:
+
+$$
+p \leftarrow p + \Delta p
+$$
+
+Stop when $\|\Delta p\|$ is sufficiently small.
+
+---
+
+# Final Summary
+
+- The optical flow equation comes from brightness constancy and first-order Taylor expansion.  
+- Lucas–Kanade with affine motion fits 6 affine parameters over a window using least squares.  
+- The iterative version repeatedly warps the second image and refines the parameters until convergence.
+
